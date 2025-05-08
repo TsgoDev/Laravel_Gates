@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+/*Navbar----------------------------*/
+
+.navbar-light {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar {
+    height: 60px;
+}
+img.rounded-circle {
+    border: 2px solid #ccc;
+    object-fit: cover;
+    
+}
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown {
+    margin-right: 15px; /* Move o ícone do perfil um pouco para a esquerda */
+}
+
+/*Navbar- END---------------------------*/
+
+
+
+
+
+/*Table----------------------------*/
+
+.table-wrapper {
+    background-color: #fff;
+    margin-left: 70px;
+    padding: 20px 25px;
+    width: 90%;
+    overflow: auto;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.table-wrapper table {
+    font-family: "Poppins", sans-serif;
+}
+
+.table-title {
+    background: rgb(101, 101, 101);
+    color: #fff;
+    padding: 10px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 0px 0px 0 0;
+}
+
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 17px;
+}
+
+
+.table-title .btn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    border: none;
+    min-width: 80px;
+    border-radius: 10px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+}
+
+/*Table---END-------------------------*/
+
+
+
+@media only screen and (max-width: 992px) {
+    #sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        width: 260px;
+        transform: translateX(-100%);
+        transition: all 150ms linear;
+        box-shadow: none !important;
+    }
+
+    .body-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 3;
+        transition: all 150ms linear;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/*--------------*/
